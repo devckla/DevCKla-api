@@ -1,0 +1,36 @@
+{
+  "name": "devckla-api",
+  "version": "1.0.0",
+  "description": "API for devckla.github.io",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "run": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devckla/DevCKla-api.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Kengo Wada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devckla/DevCKla-api/issues"
+  },
+  "homepage": "https://github.com/devckla/DevCKla-api#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.4",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.10.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9"
+  }
+}
