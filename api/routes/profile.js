@@ -5,6 +5,8 @@ const passport = require("passport");
 const testing = require("../controllers/profile/testing");
 const createProfile = require("../controllers/profile/createProfile")
   .createProfile;
+const updateProfile = require("../controllers/profile/updateProfile")
+  .updateProfile;
 
 // @route  GET /api/profile/testing
 // @desc   Testing the routing
@@ -18,6 +20,15 @@ router.post(
   "/create",
   passport.authenticate("jwt", { session: false }),
   createProfile
+);
+
+// @route  GET /api/profile/update
+// @desc   Update a user profile
+// @access Protected
+router.patch(
+  "/update",
+  passport.authenticate("jwt", { session: false }),
+  updateProfile
 );
 
 module.exports = router;
