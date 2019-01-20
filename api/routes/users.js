@@ -24,6 +24,6 @@ router.post("/login", login);
 // @route  POST /api/auth/login
 // @desc   Allow a user to login
 // @access Public
-router.post("/forgot", forgot);
+router.get("/forgot", forgot);
 
 module.exports = router;
