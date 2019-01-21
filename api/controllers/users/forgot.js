@@ -32,7 +32,8 @@ exports.forgot = (req, res) => {
               to: req.body.email,
               subject: "Reset Account Password",
               html: `<h1>Reset password for this account.</h1><br>
-              <a href="${process.env.URL}/auth/${token}">Click this link</a>
+              <a href="${process.env.URL}/auth/${token}">Click this link</a><br>
+              <p>This link expires in 2 hours</p>
               `
             };
             transporter.sendMail(mailOptions, (err, info) => {
