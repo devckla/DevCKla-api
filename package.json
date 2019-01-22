@@ -23,6 +23,8 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "mongoose": "^5.4.4",
     "nodemailer": "^5.1.1",

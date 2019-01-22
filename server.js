@@ -1,3 +1,5 @@
+require('dotenv').config()
+const config = require('config');
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -14,8 +16,7 @@ const app = express();
 app.use(morgan("dev"));
 
 // Get db URI
-const db = process.env.DB_LOCAL; /* To be used in development environment */
-// const db = process.env.DB_URI; /* To be used in production environment */
+const db = config.get('db.uri');
 
 // Make connection to db
 mongoose
@@ -43,4 +44,4 @@ app.use("/api/profile", profile);
 // Declare port number
 const port = process.env.PORT || 3000;
 
-app.listen(port, () => console.log("Server is running"));
+app.listen(port, () => console.log("Server is running on port ", port));
