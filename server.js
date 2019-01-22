@@ -1,5 +1,4 @@
 require('dotenv').config()
-const config = require('config');
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -16,7 +15,7 @@ const app = express();
 app.use(morgan("dev"));
 
 // Get db URI
-const db = config.get('db.uri');
+const db = process.env.DB_URI;
 
 // Make connection to db
 mongoose
