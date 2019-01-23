@@ -21,3 +21,8 @@ devckla.github.io api.
 - Run `npm install`
 
 - Finally `npm start`
+
+### Contributors
+
+- Kengo Wada
+- Maseruka Isaac

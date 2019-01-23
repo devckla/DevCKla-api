@@ -4,15 +4,16 @@
   "description": "API for devckla.github.io",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "run": "nodemon server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devckla/DevCKla-api.git"
   },
   "keywords": [
-    "node"
+    "node",
+    "Facebook Developers Circles Kampala"
   ],
   "author": "Kengo Wada",
   "license": "MIT",
