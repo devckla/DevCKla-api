@@ -14,10 +14,10 @@ devckla.github.io api.
 
 - Create a `.env` file in the root directory
 
-- In the `.env` file add `DB_LOCAL`, `JWT_SECRET`, `MAIL_USER`, `MAIL_PASSWORD`, `MAIL_HOST`, `MAIL_PORT`.
+- Copy the contents of `.env.template` to `.env`
+
+- In the `.env` file replace the values with your own configs
 
 - Run `npm install`
-
-- Then `source .env`
 
 - Finally `npm start`
