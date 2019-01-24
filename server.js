@@ -37,8 +37,8 @@ app.use(passport.initialize());
 require("./config/passport")(passport);
 
 // Declare routes path
-app.use("/api/auth", users);
-app.use("/api/profile", profile);
+app.use("/auth", users);
+app.use("/profile", profile);
 
 // Declare port number
 const port = process.env.PORT || 3000;
