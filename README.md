@@ -12,9 +12,7 @@ devckla.github.io api.
 
 `cd DevCKla-api`
 
-- Create a `.env` file in the root directory
-
-- Copy the contents of `.env.template` to `.env`
+- Run `mv .env.template .env`
 
 - In the `.env` file replace the values with your own configs
 
