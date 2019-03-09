@@ -14,7 +14,7 @@ devckla.github.io api.
 
 - Run `mv .env.template .env`
 
-- In the `.env` file replace the values with your own configs
+- Edit the `.env` file to replace the values with your own configs
 
 - Run `npm install`
 
