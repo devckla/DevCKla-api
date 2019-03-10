@@ -17,14 +17,25 @@ app.use(morgan("dev"));
 // Get db URI
 const db = process.env.DB_URI;
 
+// Handle CORS errors
+app.use((req, res, next) => {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header(
+		"Access-Control-Allow-Headers",
+		"Oringin, X-Requested-With, Content-Type, Authorization"
+	);
+	if (req.method === "OPTIONS") {
+		res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
+		return res.status(200).json({});
+	}
+	next();
+});
+
 // Make connection to db
 mongoose
-  .connect(
-    db,
-    { useNewUrlParser: true }
-  )
-  .then(() => console.log("Connected to the db"))
-  .catch(err => console.log(err));
+	.connect(db, { useNewUrlParser: true })
+	.then(() => console.log("Connected to the db"))
+	.catch(err => console.log(err));
 
 // Set body-parser middleware
 app.use(bodyParser.json());
