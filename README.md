@@ -12,11 +12,9 @@ devckla.github.io api.
 
 `cd DevCKla-api`
 
-- Create a `.env` file in the root directory
+- Run `mv .env.template .env`
 
-- Copy the contents of `.env.template` to `.env`
-
-- In the `.env` file replace the values with your own configs
+- Edit the `.env` file to replace the values with your own configs
 
 - Run `npm install`
 
