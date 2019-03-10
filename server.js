@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const morgan = require("morgan");
+// const morgan = require("morgan");
 const passport = require("passport");
 
 // Call routes files
@@ -12,7 +12,7 @@ const profile = require("./api/routes/profile");
 const app = express();
 
 // Use Morgan for logging
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 
 // Get db URI
 const db = process.env.DB_URI;
