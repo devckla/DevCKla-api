@@ -11,4 +11,8 @@ app.use(cors({ origin: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+const profile = require('./profile/routes');
+
+app.use('/profile', profile);
+
 exports.devckla = functions.https.onRequest(app);
